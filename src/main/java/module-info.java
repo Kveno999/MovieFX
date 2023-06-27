@@ -8,4 +8,6 @@ module com.example.moviefx {
 
     opens com.example.moviefx to javafx.fxml;
     exports com.example.moviefx;
+    exports com.example.moviefx.controllers;
+    opens com.example.moviefx.controllers to javafx.fxml;
 }

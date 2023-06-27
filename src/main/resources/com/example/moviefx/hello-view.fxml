@@ -5,33 +5,39 @@
 <?import javafx.scene.layout.VBox?>
 
 <?import javafx.scene.layout.HBox?>
-<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.moviefx.HelloController" spacing="10" alignment="CENTER">
+<?import javafx.scene.control.TextField?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.moviefx.controllers.MovieController" spacing="10" alignment="CENTER">
     <Label styleClass="header" text="Product Details" />
 
     <HBox spacing="10" alignment="CENTER">
         <Label styleClass="property" text="ID:" />
-        <Label fx:id="id" styleClass="value" />
-    </HBox>
-
-    <HBox spacing="10" alignment="CENTER">
-        <Label styleClass="property" text="Price:" />
-        <Label fx:id="name" styleClass="value" />
+        <TextField fx:id="id" styleClass="value" />
     </HBox>
 
     <HBox spacing="10" alignment="CENTER">
         <Label styleClass="property" text="Name:" />
-        <Label fx:id="title" styleClass="value" />
+        <TextField fx:id="name" styleClass="value" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label styleClass="property" text="Title:" />
+        <TextField fx:id="title" styleClass="value" />
     </HBox>
 
     <HBox spacing="10" alignment="CENTER">
         <Label styleClass="property" text="Description:" />
-        <Label fx:id="description" styleClass="value" />
+        <TextField fx:id="description" styleClass="value" />
     </HBox>
 
     <HBox spacing="10" alignment="CENTER">
-        <Label styleClass="property" text="Owner:" />
-        <Label fx:id="rate" styleClass="value" />
+        <Label styleClass="property" text="Rate:" />
+        <TextField fx:id="rate" styleClass="value" />
     </HBox>
 
-    <Button text="Get Details" onAction="#onHelloButtonClick" />
+    <Button text="Save" onAction="#onSave" />
+    <Button text="Open Chart" onAction="#onOpenChart" />
+
+
 </VBox>
+
+
